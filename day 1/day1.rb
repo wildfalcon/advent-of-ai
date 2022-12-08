@@ -2,7 +2,8 @@
 lines = File.readlines(ARGV[0])
 
 # Initialize a list to store the number of Calories carried by each Elf
-calories = []
+# with an initial value of 0
+calories = [0]
 
 # Iterate over the lines of the input data
 lines.each do |line|
