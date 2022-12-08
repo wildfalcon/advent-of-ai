@@ -29,8 +29,6 @@ strategy_guide.each do |opponent, response|
       # Rock loses to Scissors
       score = 0
     end
-    # Add the score for choosing Rock
-    total_score += 1
   when "Y" # Paper
     if opponent == "A"
       # Paper beats Rock
@@ -42,8 +40,6 @@ strategy_guide.each do |opponent, response|
       # Paper loses to Scissors
       score = 0
     end
-    # Add the score for choosing Paper
-    total_score += 2
   when "Z" # Scissors
     if opponent == "A"
       # Scissors loses to Rock
@@ -55,10 +51,8 @@ strategy_guide.each do |opponent, response|
       # Scissors ties with Scissors
       score = 3
     end
-    # Add the score for choosing Scissors
-    total_score += 3
   end
-  # Add the score for the outcome of the round to the total score
+  # Add the score for the round to the total score
   total_score += score
 end
 
