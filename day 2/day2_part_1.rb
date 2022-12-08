@@ -1,6 +1,9 @@
+# Get the input data filename from the command line arguments
+input_filename = ARGV[0]
+
 # Parse the strategy guide from the input file
 strategy_guide = {}
-File.foreach("input.txt") do |line|
+File.foreach(input_filename) do |line|
   # Split the line into the opponent's choice and our response
   opponent, response = line.split
   # Store the response in the strategy guide
